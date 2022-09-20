@@ -6,9 +6,7 @@
       return {
         images: [
           "https://bebechito.com/wp-content/uploads/2020/08/comunidad-de-vecinos.jpeg",
-          "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
-          "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
-          "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
+          
         ],
         timer: null,
         currentIndex: 0

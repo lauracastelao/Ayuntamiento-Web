@@ -3,118 +3,67 @@
 
 </script>
 <template>
-   <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-   
-    <ul>
-      <li><a class="active" >ehfvef</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-    </ul>
+   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Buzonín 📬</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <RouterLink to="">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/course">Cursos</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/favourites">Favoritos</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/cart">Cart</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/member">Members</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink to="/contact">Contacto</RouterLink>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
   </nav>
 </template>
 
+
 <style lang="css" scoped>
-  *{
-  padding: 0;
-  margin: 0;
+ .nav-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
   text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
+  margin-right: 1rem;
+  color: #000;
 }
-body{
-  font-family: montserrat;
+a:hover {
+  color: crimson;
 }
-nav{
-  background: #c20000;
-  height: 100%;
-  width: 100%;
-  
-}
-label.logo{
-  color: #fff;
-  font-size: 24px;
-  line-height: 60px;
-  padding: 0 100px;
-  font-weight: bold;
-  text-align: center;
-}
-nav ul{
-  float: center;
-  margin-right: 20px;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-nav ul li a{
-  color: #fff;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-a.active,a:hover{
-  background: #fff;
-  transition: .5s;
-  color: #022f69;
-}
-.checkbtn{
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-@media (max-width: 968px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 875px){
-  .checkbtn{
-    display: block;
-  }
-  nav ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #27282c;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover, a.active{
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-}
- 
 </style>

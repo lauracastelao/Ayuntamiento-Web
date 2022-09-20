@@ -2,14 +2,7 @@
      <div class="presentacion">
                 <p class="bienvenida">Bienvenidxs</p>
                 <h2>La web que te quiere <span>escuchar </span> más simple,más conectados.</h2>
-                <p class="descripcion">
-                    <ul>
-                  <li>  Podrás enviar una carta al ayuntamiento, nsootros nos encargamos de todo </li>
-                <li> Gratis </li>
-                  <li>  Accesible, rompemos la brecha digital </li>
-
-                </ul>
-                </p>
+                
      </div>
 </template>
 <style scoped>
@@ -19,6 +12,7 @@
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  margin-top: 6vh;
 }
 .contenido header .contenido-header nav ul a:hover {
   color: yellow;
@@ -26,7 +20,7 @@
 
 .presentacion {
   max-width: 1100px;
-  height: 100vh;
+  height: 70vh;
   margin: auto;
   columns: #ffff;
   display: flex;
@@ -50,7 +44,7 @@
 
 .presentacion h2 span {
   font-size: 55px;
-  color: rgb(218, 142, 196);
+  color: rgb(235, 72, 72);
 }
 
  .presentacion .descripcion {
