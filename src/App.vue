@@ -2,6 +2,7 @@
 import { RouterView } from "vue-router";
 
 import Nav from "./components/Nav.vue";
+import Copyright from "./components/Copyright.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Nav from "./components/Nav.vue";
 
 
   <RouterView />
+  <Copyright/>
 </template>
 
 <style scoped>

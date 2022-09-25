@@ -9,6 +9,7 @@
 
 </style>
 <script setup>
+import Claim from '../components/Claim.vue';
 
 
 

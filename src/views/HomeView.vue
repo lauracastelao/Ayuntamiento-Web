@@ -1,11 +1,13 @@
 <script setup>
 
 import Home from "../components/Home.vue";
+
 </script>
 
 <template>
 <div id="Home">
   <Home/>
+
 </div>
 </template>
 <style scoped lang="css">

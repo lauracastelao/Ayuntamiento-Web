@@ -4,7 +4,7 @@
 import {RouterLink} from 'vue-router';
 </script>
 <template>
-   <nav class="navbar navbar-expand-lg bg-info fixed-top d-flex" id="navbar">
+   <nav class="navbar navbar-expand-lg bg-dark fixed-top d-flex" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Buzonín 📬</a>
       <button
@@ -21,22 +21,22 @@ import {RouterLink} from 'vue-router';
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink to="/home">Home</RouterLink>
+            <RouterLink to="/home">INICIO</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/letter">Carta</RouterLink>
+            <RouterLink to="/letter">CARTA</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/claim">Claim</RouterLink>
+           <RouterLink to="/claim">QUEJA/SUGERENCIA</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/question">Pregunta</RouterLink>
+            <RouterLink to="/question">PREGUNTA</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink to="/faq">FAQ</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/about">Conóceme</RouterLink>
+            <RouterLink to="/about">CONÓCEME</RouterLink>
           </li>
           <li class="nav-item">
            <RouterLink to="/prueba">Prueba</RouterLink>
@@ -66,10 +66,12 @@ import {RouterLink} from 'vue-router';
 a {
   text-decoration: none;
   margin-right: 1rem;
-  color: #000;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
 a:hover {
-  color: crimson;
+  color: rgb(193, 178, 181);
 }
 
 nav {
@@ -77,5 +79,7 @@ nav {
   height: 6.5vh;
 }
 
-
+.nav-item{
+  color:white;
+}
 </style>

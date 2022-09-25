@@ -49,7 +49,7 @@ const router = createRouter({
     {
       path: '/claim',
       name: 'claim',
-      component: () => import("../views/Claimview.vue"),
+      component: () => import("../views/SuggestView.vue"),
     },
   ],
   
