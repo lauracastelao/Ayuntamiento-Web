@@ -1,9 +1,10 @@
 
 <script setup>
 
+import {RouterLink} from 'vue-router';
 </script>
 <template>
-   <nav class="navbar navbar-expand-lg bg-light fixed-top d-flex">
+   <nav class="navbar navbar-expand-lg bg-info fixed-top d-flex" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Buzonín 📬</a>
       <button
@@ -20,22 +21,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <RouterLink to="">Home</RouterLink>
+            <RouterLink to="/home">Home</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/course">Cursos</RouterLink>
+            <RouterLink to="/letter">Carta</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/favourites">Favoritos</RouterLink>
+           <RouterLink to="/claim">Claim</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/cart">Cart</RouterLink>
+            <RouterLink to="/faq">FAQ</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/member">Members</RouterLink>
+            <RouterLink to="/member">Conóceme</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/contact">Contacto</RouterLink>
+           <RouterLink to="/prueba">Prueba</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -49,6 +50,7 @@
         </form>
       </div>
     </div>
+    
   </nav>
 </template>
 
@@ -66,4 +68,11 @@ a {
 a:hover {
   color: crimson;
 }
+
+nav {
+  width: 100%;
+  height: 6.5vh;
+}
+
+
 </style>

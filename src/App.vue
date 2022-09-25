@@ -1,17 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HomeView from "./views/HomeView.vue";import TheWelcome from "./components/TheWelcome.vue";
+import { RouterView } from "vue-router";
+
+import Nav from "./components/Nav.vue";
 </script>
 
 <template>
-<HomeView/>
+<Nav/>
 
+
+  <RouterView />
 </template>
 
 <style scoped>
-nav{
-  width:100%;
-  height: 100%;
-}
 
 </style>

@@ -13,6 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-top: 6vh;
+  height:1vw;
 }
 .contenido header .contenido-header nav ul a:hover {
   color: yellow;

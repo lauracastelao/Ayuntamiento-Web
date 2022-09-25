@@ -1,98 +1,12 @@
 <script setup>
-import Access from "../components/Access.vue";
-import Footer from "../components/Copyright.vue";
 
-import Letter from "../components/Letter.vue";
-import Presentacion from "../components/Presentacion.vue";
-import Nav from "../components/Nav.vue";
+import Home from "../components/Home.vue";
 </script>
 
 <template>
-  <Nav />
-  <Presentacion />
-  <div class="container-fluid py-2">
-    <div class="d-flex flex-row flex-nowrap mx-4">
-      <div class="card mx-4 mb-4" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="https://github.com/lauracastelao/image/blob/main/Mi%20proyecto.jpg?raw=true"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title text-center">Carta</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-      <div class="card mx-4 mb-4" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="https://github.com/lauracastelao/image/blob/main/Mi%20proyecto.jpg?raw=true"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title text-center">Quejas y sugerencias</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card mx-4 mb-4" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="https://github.com/lauracastelao/image/blob/main/Mi%20proyecto.jpg?raw=true"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title text-center">FaQ</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-
-          <button class="btn btn-white text-black">
-            <RouterLink to="/about"> Accede </RouterLink>
-          </button>
-        </div>
-      </div>
-      <div class="card mx-4 mb-4" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="https://github.com/lauracastelao/image/blob/main/Mi%20proyecto.jpg?raw=true"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title text-center">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card mx-4 mb-4" style="width: 18rem">
-        <img
-          class="card-img-top"
-          src="https://github.com/lauracastelao/image/blob/main/Mi%20proyecto.jpg?raw=true"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title text-center">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="Home">
+  <Home/>
+</div>
 </template>
 <style scoped lang="css">
 * {

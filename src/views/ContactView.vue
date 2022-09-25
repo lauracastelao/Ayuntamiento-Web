@@ -1,3 +1,17 @@
-<template>
-    <x-contact></x-contact>
-</template>
+<script setup>
+
+   
+import Form from "../components/Form.vue";
+
+    
+    </script>
+    
+    <template>
+      <div>
+       <Form/>
+      </div>
+    </template>
+    
+    <style>
+    
+    </style>
