@@ -32,9 +32,9 @@ const router = createRouter({
       component: () => import("../views/LetterView.vue"),
     },
     {
-      path: '/prueba',
-      name: 'prueba',
-      component: () => import("../views/PruebaView.vue"),
+      path: '/about',
+      name: 'about',
+      component: () => import("../views/AboutView.vue"),
     },
     {
       path: '/faq',
@@ -42,9 +42,9 @@ const router = createRouter({
       component: () => import("../views/FaqView.vue"),
     },
     {
-      path: '/answer',
-      name: 'answer',
-      component: () => import("../views/FaqView.vue"),
+      path: '/question',
+      name: 'question',
+      component: () => import("../views/QuestionView.vue"),
     },
     {
       path: '/claim',

@@ -30,10 +30,13 @@ import {RouterLink} from 'vue-router';
            <RouterLink to="/claim">Claim</RouterLink>
           </li>
           <li class="nav-item">
+            <RouterLink to="/question">Pregunta</RouterLink>
+          </li>
+          <li class="nav-item">
             <RouterLink to="/faq">FAQ</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink to="/member">Conóceme</RouterLink>
+            <RouterLink to="/about">Conóceme</RouterLink>
           </li>
           <li class="nav-item">
            <RouterLink to="/prueba">Prueba</RouterLink>
