@@ -1,0 +1,45 @@
+<template>
+    <section>
+        <h1> Login </h1>
+        <div class="form">
+            <label for="username">Username</label>
+            <input v-model="username" type="text" name="username" class="input" autocomplete="off" />
+            <label for="password">Password</label>
+            <input v-model="password" type="password" class="input" autocomplete="off" />
+            <button @click="login" class="btn">Login</button>            
+        </div>
+    </section>
+</template>
+ 
+<script>
+export default {
+    data() {
+        return {
+            username: null,
+            password: null,
+        }
+    }, 
+    methods: {
+        login() {
+            // Authenticate user against API
+            console.log(this.username, this.password);
+            
+            // Set value somewhere to indicate that the user is logged in
+            let isLoggedIn = true;
+            
+            // Redirect to page
+            const redirectPath = this.$route.query.redirect || '/';
+            this.$router.push(redirectPath);
+        }
+    }
+}
+</script>
+ 
+<style scoped>
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+</style> <!-- http://programmingnotes.org/ -->

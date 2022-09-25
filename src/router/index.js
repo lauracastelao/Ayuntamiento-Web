@@ -51,7 +51,15 @@ const router = createRouter({
       name: 'claim',
       component: () => import("../views/SuggestView.vue"),
     },
+    {
+      path: '/idea',
+      name: 'idea',
+      component: () => import("../views/SocialView.vue"),
+    },
+    
+  
   ],
+
   
 });
 

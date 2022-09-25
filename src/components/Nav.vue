@@ -39,7 +39,7 @@ import {RouterLink} from 'vue-router';
             <RouterLink to="/about">CONÓCEME</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/prueba">Prueba</RouterLink>
+           <RouterLink to="/idea">IDEA</RouterLink>
           </li>
         </ul>
         <form class="d-flex" role="search">
