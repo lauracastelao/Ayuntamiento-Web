@@ -9,22 +9,24 @@
 			</h2>
 		</div>
 		<form class="card-form">
+		<form action="https://formsubmit.co/lauragarciacastelao@hotmail.com" method="POST" />
 			<div class="input">
-				<input type="text" class="input-field"  required/>
+				<input type="text" class="input-field" name="name" required/>
 				<label class="input-label">Nombre completo</label>
 			</div>
 						<div class="input">
-				<input type="text" class="input-field" value="" required/>
+				<input type="text" class="input-field" name="name" required/>
 				<label class="input-label">Email</label>
 			</div>
 						<div class="input">
-				<input type="text" class="input-field" required/>
+				<input type="text" class="input-field" name="name" required/>
 				<label class="input-label">Pregunta</label>
 			</div>
 			<div class="action">
 				<button class="action-button">Enviar</button>
 			</div>
 		</form>
+	
 		<div class="card-info">
 			<p>Responderemos a tu pregunta via email <a href="#">Terms and Conditions</a></p>
 		</div>
