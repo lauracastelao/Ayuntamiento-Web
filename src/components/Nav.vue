@@ -55,7 +55,7 @@ import {RouterLink} from 'vue-router';
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-danger" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -88,4 +88,6 @@ nav {
 .nav-item{
   color:white;
 }
+
+
 </style>
