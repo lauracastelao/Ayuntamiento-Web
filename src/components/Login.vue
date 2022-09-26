@@ -12,22 +12,22 @@
             <div class="col-md-6 col-lg-7 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
-                <form>
-
+                <form action class="form" @submit.prevent="login">
+                
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                    <span class="h1 fw-bold mb-0">Logo</span>
+                    <span class="h1 fw-bold mb-0"></span>
                   </div>
 
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
                   <div class="form-outline mb-4">
-                    <input v-model="email" id="form2Example17" class="form-control form-control-lg" />
+                    <input v-model="email"  id="form2Example17" class="form-control form-control-lg" />
                     <label class="form-label" for="form2Example17">Email address</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input v-model="password" id="form2Example27" class="form-control form-control-lg" />
+                    <input v-model="password"  type="password" id="form2Example27" class="form-control form-control-lg" />
                     <label class="form-label" for="form2Example27">Password</label>
                   </div>
 
@@ -54,18 +54,24 @@
 </template>
  
 <script>
-  export default {
-    data: () => ({
-      email: "",
-      password: ""
-    }),
-    methods: {
-      login() {
-        console.log(this.email);
-        console.log(this.password);
+  import auth from "@/logic/auth";
+export default {
+  data: () => ({
+    email: "",
+    password: "",
+    error: false
+  }),
+  methods: {
+    async login() {
+      try {
+        await auth.login(this.email, this.password);
+        this.$router.push("/");
+      } catch (error) {
+        this.error = true;
       }
     }
-  };
+  }
+};
   </script>
  
 <style scoped>
