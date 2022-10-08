@@ -1,6 +1,6 @@
-<template>
+<!-- <template>
   
-<div class="container">
+<!-- <div class="container">
 	<div class="card">
 		<figure class="card__thumb">
 			<img src="https://source.unsplash.com/75S9fpDJVdo/300x510" alt="Picture by Kyle Cottrell" class="card__image">
@@ -10,15 +10,15 @@
 				<a href="" class="card__button">Read more</a>
 			</figcaption>
 		</figure>
-	</div>
+	</div> -->
 </template>
 
 <script>
-export default {
 
-}
+
+
 </script>
 
 <style scoped>
 
-</style>
+</style> -->

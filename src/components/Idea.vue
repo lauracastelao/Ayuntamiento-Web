@@ -31,7 +31,9 @@
         </div>
         
       </section>
-      
+      <div class="frame">
+        <iframe src="https://embed.lottiefiles.com/animation/99987"></iframe>
+      </div>
 
       <input type="radio" name="accordion" id="acc-close" />
     </nav>
@@ -151,6 +153,8 @@ input:checked + .box .box-close {
 input:checked + section.box .box-title:before {
   transform: rotate(90deg);
 }
+
+
 </style>
 
 <script setup></script>

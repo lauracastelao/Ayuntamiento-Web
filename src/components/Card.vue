@@ -4,7 +4,7 @@
 <template>
     
 
-<div class="container-fluid py-2">
+<!-- <div class="container-fluid py-2">
     <div class="d-flex flex-row flex-nowrap mx-4" id="lol">
       <div class="card mx-4 mb-4" style="width: 18rem">
         <img
@@ -88,8 +88,90 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <div class="container">
+      <div class="box">
+        <img src="https://github.com/lauracastelao/image/blob/main/answer-defi.jpg?raw=true"/>
+        <h3>Invesment</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
+          rem fuga possimus!
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://github.com/lauracastelao/image/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).jpg?raw=true"/>
+        <h3>Work Palce</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
+          rem fuga possimus!
+        </p>
+      </div>
+      <div class="box">
+        <img src="https://github.com/lauracastelao/image/blob/main/Claim.jpg?raw=true"/>
+        <h3>Creative Progress</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
+          rem fuga possimus!
+          
+        </p>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+    </div>
 </template>
-<style scoped lang="css">
+<style lang="css" scoped>
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    width: 920px;
+    height: auto;
+    margin: 30px auto;
+}
+.box{
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+}
+.box:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h3,p{
+    text-align: center;
+    color: rgb(104, 92, 92);
+}
+p{
+    font-size: 15px;
+    padding: 0 5px;
+}
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 85%;
+        display: block;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
 
 </style>
