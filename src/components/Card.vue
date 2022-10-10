@@ -92,32 +92,28 @@
   <div class="container">
       <div class="box">
         <img src="https://github.com/lauracastelao/image/blob/main/answer-defi.jpg?raw=true"/>
-        <h3>Invesment</h3>
+        <h3>Pregunta</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
-          rem fuga possimus!
+          Envia una pregunta al ayuntamiento,nosotros nos encargamos de
+            que llegue al departamento correcto
         </p>
       </div>
       <div class="box">
-        <img src="https://github.com/lauracastelao/image/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(1).jpg?raw=true"/>
-        <h3>Work Palce</h3>
+        <img src="https://github.com/lauracastelao/image/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(7).png?raw=true"/>
+        <h3>Carta</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
-          rem fuga possimus!
+          Envia una carta general al ayuntamiento,nosotros nos encargamos de
+          que llegue al departamento correcto
         </p>
       </div>
       <div class="box">
         <img src="https://github.com/lauracastelao/image/blob/main/Claim.jpg?raw=true"/>
-        <h3>Creative Progress</h3>
+        <h3>Queja y sugerencia</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          nulla dolorum ducimus, tempora suscipit inventore obcaecati architecto
-          rem fuga possimus!
+        ¿Estas descontento? Haznoslo saber,esta sección te permite poder realizar cualquier queja,reclamación o sugerencia.
           
         </p>
-        <a href="#!" class="btn btn-primary">Button</a>
+        
       </div>
     </div>
 </template>

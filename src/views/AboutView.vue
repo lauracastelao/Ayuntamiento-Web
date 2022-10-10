@@ -3,178 +3,110 @@
 <template>
   <div class="container">
     <main id="hero">
-      <!-- <div class="card">
-        <div class="card__image-container">
-          <img
-            class="card__image"
-            src="https://images.unsplash.com/photo-1519999482648-25049ddd37b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2126&q=80"
-            alt=""
-          />
-        </div>
-
-        <svg class="card__svg" viewBox="0 0 800 500">
-          <path
-            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400 L 800 500 L 0 500"
-            stroke="transparent"
-            fill="#333"
-          />
-          <path
-            class="card__line"
-            d="M 0 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 800 400"
-            stroke="pink"
-            stroke-width="3"
-            fill="transparent"
-          />
-        </svg>
-
-        <div class="card__content">
-          <h1 class="card__title">Laura García</h1>
-          <p>
-            Proyecto realizado en mi etapa final como desarrolladora full stack.
-            Si quieres conocer más de mi ¡Clicka abajo! Te llevará a mi
-            Portfolio personal.
-          </p>
-        </div>
-        <div class="text-center mt-4">
-          <button type="button" class="btn btn-danger">PORTFOLIO</button>
-        </div>
-      </div> -->
-      
+      <div class="promo">
+        <h1>¿Quieres conocerme?</h1>
+        <p>Echale un vistazo a mi portfolio</p>
+        <button type="button">Accede </button>
+      </div>
       <video muted autoplay loop>
-        <source src="../video/production ID_5183314.mp4" type="video/mp4">
+        <source src="../video/production ID_5183314.mp4" type="video/mp4" />
       </video>
-    
+      <div class="capa"></div>
     </main>
   </div>
 </template>
 
 <style lang="scss" scoped>
-// * {
-//   box-sizing: border-box;
-//   line-height: 1.5;
-//   font-family: "Open Sans", sans-serif;
-// }
 
-// img {
-//   max-width: 100%;
-// }
 
-// .container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-// }
-
-// .card {
-//   position: relative;
-//   background: #333;
-//   width: 400px;
-//   height: 75vh;
-//   border-radius: 6px;
-//   padding: 2rem;
-//   color: #aaa;
-//   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
-//   overflow: hidden;
-
-//   &__image-container {
-//     margin: -2rem -2rem 1rem -2rem;
-//   }
-
-//   &__line {
-//     opacity: 0;
-//     animation: LineFadeIn 0.8s 0.8s forwards ease-in;
-//   }
-
-//   &__image {
-//     opacity: 0;
-//     animation: ImageFadeIn 0.8s 1.4s forwards;
-//   }
-
-//   &__title {
-//     color: white;
-//     margin-top: 0;
-//     font-weight: 800;
-//     letter-spacing: 0.01em;
-//   }
-
-//   &__content {
-//     margin-top: -1rem;
-//     opacity: 0;
-//     animation: ContentFadeIn 0.8s 1.6s forwards;
-//   }
-
-//   &__svg {
-//     position: absolute;
-//     left: 0;
-//     top: 115px;
-//   }
-// }
-
-// @keyframes LineFadeIn {
-//   0% {
-//     opacity: 0;
-//     d: path(
-//       "M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 "
-//     );
-//     stroke: #fff;
-//   }
-//   50% {
-//     opacity: 1;
-//     d: path(
-//       "M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300"
-//     );
-//     stroke: #888bff;
-//   }
-//   100% {
-//     opacity: 1;
-//     d: path(
-//       "M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400"
-//     );
-//     stroke: #545581;
-//   }
-// }
-
-// @keyframes ContentFadeIn {
-//   0% {
-//     transform: translateY(-1rem);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
-
-// @keyframes ImageFadeIn {
-//   0% {
-//     transform: translate(-0.5rem, -0.5rem) scale(1.05);
-//     opacity: 0;
-//     filter: blur(2px);
-//   }
-//   50% {
-//     opacity: 1;
-//     filter: blur(2px);
-//   }
-//   100% {
-//     transform: translateY(0) scale(1);
-//     opacity: 1;
-//     filter: blur(0);
-//   }
-// }
-
-#hero{
-min-height: 100vh;
-position: relative;
+#hero {
+  min-height: 100vh;
+  position: relative;
 }
 
-video{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(56, 51, 51);
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.promo {
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+button{
+  border-radius:30px;
+  padding: 10px 0;
+  width:160px;
+  background-color: pink;
+  font-size: 1.8rem;
+  color: #3f3f3f;
+  font-weight: 800;
+  transition:150ms;
+  margin-top:40px;
 
 }
 
+button:focus{
+outline: none;
+}
+button:hover{
+  transform: translate(0,-5px);
+}
+
+.body{
+  margin:0;
+  padding: 0;
+  line-height:1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.promo{
+  padding-top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+
+}
+
+.promo p{
+  font-size: 2.5 rem;
+  text-align:center;
+  color:white;
+  font-weight: 900;
+
+}
+
+
+.promo h1{
+  font-size: 3.5rem;
+  text-align:center;
+  color:#f3f3f3;
+  font-weight: 700;
+}
 </style>

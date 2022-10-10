@@ -19,26 +19,26 @@
                     <span class="h1 fw-bold mb-0"></span>
                   </div>
 
-                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Acceso a tu perfil</h5>
 
                   <div class="form-outline mb-4">
                     <input v-model="email"  id="form2Example17" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example17">Email address</label>
+                    <label class="form-label" for="form2Example17">Dirección de correo electrónico</label>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input v-model="password"  type="password" id="form2Example27" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example27">Password</label>
+                    <label class="form-label" for="form2Example27">Contraseña</label>
                   </div>
 
                   <div class="pt-1 mb-4">
                     <p v-if="error" class="error">Has introducido mal el email o la contraseña.</p>
-                    <button class="btn btn-dark btn-lg btn-block" type="button">Login</button>
+                    <button class="btn btn-dark btn-lg btn-block" type="button">Entrar</button>
                   </div>
 
-                  <a class="small text-muted" href="#!">Forgot password?</a>
-                  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
-                      style="color: #393f81;">Register here</a></p>
+                  <a class="small text-muted" href="#!">¿No recuerdas tu contraseña?</a>
+                  <p class="mb-5 pb-lg-2" style="color: #393f81;">¿No tienes cuenta creada? <a href="#!"
+                      style="color: #393f81;">Registrate aqui</a></p>
                   <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a>
                 </form>
