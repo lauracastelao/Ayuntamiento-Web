@@ -1,5 +1,7 @@
 <template>
-  <h1>HOLA</h1>
+    <div>
+      <p>Somos el servicio</p>
+    </div>
   
 </template>
 

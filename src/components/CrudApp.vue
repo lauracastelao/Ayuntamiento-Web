@@ -1,10 +1,12 @@
 <template>
-
- <p>Jo</p>
+<p>Jo</p>
+<p>Jo</p>
+<p>Jo</p>
+<p>Jo</p>
+<p>Jo</p>
 <p>Jo</p>
 
-<div style="margin: 0 auto;width:80%">
-  <Panel header="Crud">
+<div>
         <DataTable :value="customers" :paginator="true" :rows="10"
             paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
             :rowsPerPageOptions="[10,20,50]" responsiveLayout="scroll"
@@ -19,16 +21,32 @@
             <template #paginatorend>
                 <Button type="button" icon="pi pi-cloud" class="p-button-text" />
             </template>
-        </DataTable>  
-      </Panel>  
+        </DataTable>    
 	</div>
 
-<CrudApp/>
 </template>
-<script setup>
-import CrudApp from "../components/CrudApp.vue";
+
+<script>
+import Letterservice from '../service/LetterService';
+export default {
+
+    name: 'CrudApp',
+    data(){
+      return{
+        letters: null
+      }
+       },
+      letterService: null,
+      created(){
+        this.letterService= new LetterService();
+      },
+     mounted() {
+        this.letterService.getAll().then(data=>{
+            console.log(data);
+        })
+     },
+    }
 
 </script>
-<style lang="css" scoped>
-    
-</style>
+
+<style lang="css" scoped></style>

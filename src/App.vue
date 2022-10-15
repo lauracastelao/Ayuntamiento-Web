@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router";
-
+import CrudApp from "./components/CrudApp.vue";
 import Nav from "./components/Nav.vue";
 import Copyright from "./components/Copyright.vue";
 </script>
@@ -10,7 +10,8 @@ import Copyright from "./components/Copyright.vue";
 
 
   <RouterView />
-  <Copyright/>
+  <!-- <Copyright/> -->
+
 </template>
 
 <style scoped>
