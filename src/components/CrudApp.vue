@@ -1,52 +1,118 @@
 <template>
-<p>Jo</p>
-<p>Jo</p>
-<p>Jo</p>
-<p>Jo</p>
-<p>Jo</p>
-<p>Jo</p>
-
-<div>
-        <DataTable :value="customers" :paginator="true" :rows="10"
-            paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-            :rowsPerPageOptions="[10,20,50]" responsiveLayout="scroll"
-            currentPageReportTemplate="Showing {first} to {last} of {totalRecords}">
-            <Column field="name" header="Name"></Column>
-            <Column field="country.name" header="Country"></Column>
-            <Column field="company" header="Company"></Column>
-            <Column field="representative.name" header="Representative"></Column>
-            <template #paginatorstart>
-                <Button type="button" icon="pi pi-refresh" class="p-button-text" />
-            </template>
-            <template #paginatorend>
-                <Button type="button" icon="pi pi-cloud" class="p-button-text" />
-            </template>
-        </DataTable>    
-	</div>
-
+  <div style="margin: 0 auto; width: 80%">
+    <Panel header="CRUD 4SD">
+      <Menubar :model="items" />
+      <br />
+      <DataTable :value="personas" :paginator="true" :rows="10">
+        <Column field="nombre" header="Nombre"></Column>
+        <Column field="apellido" header="Apellido"></Column>
+        <Column field="direccion" header="Dirección"></Column>
+        <Column field="telefono" header="Teléfono"></Column>
+      </DataTable>
+    </Panel>
+    <Dialog header="Crear Persona" :visible.sync="displayModal" :modal="true">
+      <span class="p-float-label">
+        <InputText id="nombre" type="text" v-model="persona.nombre" style="width: 100%" />
+        <label for="nombre">Nombre</label>
+      </span>
+      <br />
+      <span class="p-float-label">
+        <InputText id="apellido" type="text" v-model="letter.email" style="width: 100%" />
+        <label for="apellido">Apellido</label>
+      </span>
+      <br />
+      <span class="p-float-label">
+        <InputText id="direccion" type="text" v-model="letter.name" style="width: 100%" />
+        <label for="direccion">Dirección</label>
+      </span>
+      <br />
+      <span class="p-float-label">
+        <InputText id="telefono" type="text" v-model="letter.id" style="width: 100%" />
+        <label for="telefono">Teléfono</label>
+      </span>
+      <template #footer>
+        <Button label="Guardar" icon="pi pi-check" @click="save" />
+        <Button label="Cancelar" icon="pi pi-times" @click="closeModal" class="p-button-secondary" />
+      </template>
+    </Dialog>
+  </div>
 </template>
 
 <script>
-import Letterservice from '../service/LetterService';
+import LetterService from "../service/LetterService";
 export default {
-
-    name: 'CrudApp',
-    data(){
-      return{
-        letters: null
-      }
-       },
-      letterService: null,
-      created(){
-        this.letterService= new LetterService();
+  name: "CrudApp",
+  data() {
+    return {
+      letters: null,
+      letter: {
+        id: null,
+        email: null,
+        name: null,
+        
       },
-     mounted() {
-        this.letterService.getAll().then(data=>{
-            console.log(data);
-        })
-     },
+      items: [
+        {
+          label: "Nuevo",
+          icon: "pi pi-fw pi-plus",
+          command: () => {
+            this.showSaveModal();
+          }
+        },
+        {
+          label: "Editar",
+          icon: "pi pi-fw pi-pencil"
+        },
+        {
+          label: "Eliminar",
+          icon: "pi pi-fw pi-trash"
+        },
+        {
+          label: "Refrescar",
+          icon: "pi pi-fw pi-refresh",
+          command: () => {
+            this.getAll();
+          }
+        }
+      ],
+      displayModal: false
+    };
+  },
+  letterService: null,
+  created() {
+    this.letterService = new LetterService();
+  },
+  mounted() {
+    this.getAll();
+  },
+  methods: {
+    showSaveModal() {
+      this.displayModal = true;
+    },
+    getAll() {
+      this.letterService.getAll().then(data => {
+        this.letters = data.data;
+      });
+    },
+    save() {
+      this.letterService.save(this.letter).then(data => {
+        if (data.status === 200) {
+          this.displayModal = false;
+          this.letter = {
+            id: null,
+        email: null,
+        name: null,
+          };
+          this.getAll();
+        }
+      });
+    },
+    closeModal() {
+      this.displayModal = false;
     }
-
+  }
+};
 </script>
 
-<style lang="css" scoped></style>
+<style>
+</style>

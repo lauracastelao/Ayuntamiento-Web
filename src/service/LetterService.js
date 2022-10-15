@@ -7,5 +7,8 @@ export default class Letterservice{
         return axios.get(this.url + "all");
 
     }
+    save(letter) {
+        return axios.post(this.url + "save", letter)
+    }
 }
 // Aqui le pido a axios que haga la llamada a mi api de java 
