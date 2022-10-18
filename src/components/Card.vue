@@ -91,7 +91,7 @@
   </div> -->
   <div class="container">
       <div class="box">
-        <img src="https://github.com/lauracastelao/image/blob/main/answer-defi.jpg?raw=true"/>
+        <img src="https://github.com/lauracastelao/image/blob/main/answer-defi.jpg?raw=true" alt="Imagen de simbolo de pregunta"/>
         <h3>Pregunta</h3>
         <p>
           Envia una pregunta al ayuntamiento,nosotros nos encargamos de
@@ -99,7 +99,7 @@
         </p>
       </div>
       <div class="box">
-        <img src="https://github.com/lauracastelao/image/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(7).png?raw=true"/>
+        <img src="https://github.com/lauracastelao/image/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(7).png?raw=true" alt="Ilustración de una carta"/>
         <h3>Carta</h3>
         <p>
           Envia una carta general al ayuntamiento,nosotros nos encargamos de
@@ -107,7 +107,7 @@
         </p>
       </div>
       <div class="box">
-        <img src="https://github.com/lauracastelao/image/blob/main/Claim.jpg?raw=true"/>
+        <img src="https://github.com/lauracastelao/image/blob/main/Claim.jpg?raw=true" alt="Ilustracion de queja o sugerencia en simbolo"/>
         <h3>Queja y sugerencia</h3>
         <p>
         ¿Estas descontento? Haznoslo saber,esta sección te permite poder realizar cualquier queja,reclamación o sugerencia.
