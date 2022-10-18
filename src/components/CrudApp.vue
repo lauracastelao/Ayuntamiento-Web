@@ -3,19 +3,19 @@
     <Panel header="CRUD 4SD">
       <Menubar :model="items" />
       <br />
-      <DataTable :value="personas" :paginator="true" :rows="10">
+      <DataTable :value="preguntas" :paginator="true" :rows="10">
         <Column field="nombre" header="Nombre"></Column>
         <Column field="apellido" header="Apellido"></Column>
         <Column field="direccion" header="Dirección"></Column>
         <Column field="telefono" header="Teléfono"></Column>
       </DataTable>
     </Panel>
-    <Dialog header="Crear Persona" :visible.sync="displayModal" :modal="true">
+    <Dialog header="Crear pregunta" :visible.sync="displayModal" :modal="true">
       <span class="p-float-label">
         <InputText
           id="nombre"
           type="text"
-          v-model="letterService.id"
+          v-model="letter.id"
           style="width: 100%"
         />
         <label for="nombre">Pregunta</label>
@@ -41,10 +41,7 @@
         <label for="direccion">Comentario </label>
       </span>
       <br />
-      <!-- <span class="p-float-label">
-        <InputText id="telefono" type="text" v-model="letter.name" style="width: 100%" />
-        <label for="telefono">Teléfono</label>
-      </span> -->
+
       <template #footer>
         <Button label="Guardar" icon="pi pi-check" @click="save" />
         <Button
@@ -72,6 +69,7 @@ export default {
   },
   methods: {
     async getTodos() {
+      // Este paso funciona,recoge el objeto del json en consola
       let response = await axios.get(
         "https://jsonplaceholder.typicode.com/todos/1"
       );

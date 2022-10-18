@@ -23,17 +23,18 @@
 
                   <div class="form-outline mb-4">
                     <input v-model="email"  id="form2Example17" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example17">Dirección de correo electrónico</label>
+                    <label class="form-label" for="#email" >Dirección de correo electrónico</label>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input v-model="password"  type="password" id="form2Example27" class="form-control form-control-lg" />
-                    <label class="form-label" for="form2Example27">Contraseña</label>
+                    <label class="form-label" for="#password">Contraseña</label>
                   </div>
 
                   <div class="pt-1 mb-4">
                     <p v-if="error" class="error">Has introducido mal el email o la contraseña.</p>
-                    <button class="btn btn-dark btn-lg btn-block" type="button">Entrar</button>
+                    
+                    <button class="btn btn-dark btn-lg btn-block" type="submit">Entrar</button>
                   </div>
 
                   <a class="small text-muted" href="#!">¿No recuerdas tu contraseña?</a>
@@ -60,7 +61,9 @@ export default {
     email: "",
     password: "",
     error: false
+    
   }),
+ 
   methods: {
     async login() {
       try {
@@ -72,6 +75,7 @@ export default {
     }
   }
 };
+  
   </script>
  
 <style scoped>
