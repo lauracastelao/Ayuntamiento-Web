@@ -1,11 +1,13 @@
 <script setup>
-c
 
+import Home from "../components/Home.vue";
+import Axios from "../components/Axios.vue";
 </script>
 
 <template>
 <div id="Home">
   <Home/>
+  <Axios/>
 
 </div>
 </template>
