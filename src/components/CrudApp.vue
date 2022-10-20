@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div style="margin: 0 auto; width: 80%">
     <Panel header="CRUD 4SD">
       <Menubar :model="items" />
@@ -71,7 +71,7 @@ export default {
     async getTodos() {
       // Este paso funciona,recoge el objeto del json en consola
       let response = await axios.get(
-        "https://jsonplaceholder.typicode.com/todos/1"
+       API
       );
       console.log(response.data);
     },
@@ -164,4 +164,57 @@ export default {
 };
 </script>
 
-<style></style>
+<style></style> -->
+<script setup>
+import axios from "axios";
+import { ref, reactive, onBeforeMount } from "vue";
+
+const name = ref("Lau");
+
+let letters = ref([]);
+
+const newLetter = reactive({
+  name: "",
+  email: "",
+});
+
+async function getData() {
+  const url = "http://localhost:8080/api/letters";
+  const resp = await axios.get(url);
+  const json = await resp.data();
+  console.log(json);
+
+  letters.value = json;
+}
+ async function addLetter() {
+  const url = "http://localhost:8080/api/letters";
+  const response = await axios.post(url, newLetter);
+  const json = await response.data;
+  console.log(json);
+   await getData();
+}
+
+onBeforeMount(async () => {});
+console.log("hola a a a a");
+await getData();
+</script>
+
+<template>
+  
+  <div class="container test-component">
+    <h1>el crud</h1>
+    <span> {{ name }}</span>
+    <ul v-for="(letter, index) in letters" :key="index">
+      <li>{{ letter.id }}: {{ `${letter.name} / ${letter.email}`}}</li>
+    </ul>
+  
+     <div class="d-flex justify-content-center create-form">
+      <input v-model="newLetter.name" type="text" name="name" id="name" class="m-1 w-75 form-control"/>
+      <input v-model="newLetter.email" type="text" name="email" id="email" class="m-1 w-75 form-control"/>
+    </div> 
+  </div>
+
+</template>
+
+
+<style scoped></style>
