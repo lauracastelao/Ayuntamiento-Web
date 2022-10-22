@@ -1,8 +1,10 @@
 <template>
-   <Test/>
+<Crud/>
 </template>
 
 <script setup>
-import Test from '../components/Test.vue';
+import Crud from '../components/Crud.vue';
+
+
 </script>
 

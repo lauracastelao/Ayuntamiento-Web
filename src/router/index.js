@@ -71,7 +71,7 @@ const router = createRouter({
       name: 'test',
       component: () => import("../views/TestingView.vue"),
     },
-    
+ 
   
   ],
 
