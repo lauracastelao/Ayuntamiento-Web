@@ -26,30 +26,25 @@ export default {
 
   <div class="container d-flex justify-content-center mt-100 mb-100">
     <div class="box">
-      <div class="card card-black post">
-        <div class="post-heading">
-          <div class="float-left image">
-            <img
-              src="https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg"
-              class="img-circle avatar"
-              alt="user profile image"
-            />
-          </div>
-          <div class="float-left meta">
-            <div class="title h5">
-              <a href="#"><b>Ayuntamiento</b></a>
-              acaba de postear
-            </div>
-            <h6 class="text-muted time">Hace 30 días</h6>
-          </div>
+      <div class="post-heading">
+        <div class="float-left image">
+          <img
+            src="https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg"
+            class="img-circle avatar"
+            alt="user profile image"
+          />
         </div>
+        <div class="float-left meta">
+          <div class="title h5">
+            <a href="#"><b>Ayuntamiento</b></a>
+            acaba de postear
+          </div>
+          <h6 class="text-muted time">Hace 30 días</h6>
+        </div>
+      </div>
+      <div class="card w-100">
         <div class="carta">
-          <div
-            v-for="letter in letters"
-            v-bind:key="letter.id"
-            class="card"
-            style="width: 14rem"
-          >
+          <div v-for="letter in letters" v-bind:key="letter.id">
             <strong>
               <p class="card-text">{{ letter.email }}</p>
             </strong>
@@ -62,29 +57,29 @@ export default {
 </template>
 
 <style lang="css" scoped>
-.post .post-heading {
+.post-heading {
   height: 95px;
   padding: 20px 15px;
   border: none;
   border-color: none;
 }
 
-.post .post-heading .avatar {
+.post-heading .avatar {
   width: 60px;
   height: 60px;
   display: block;
   margin-right: 15px;
 }
 
-.post .post-heading .meta .title {
+.post-heading .meta .title {
   margin-bottom: 0;
 }
 
-.post .post-heading .meta .title a {
+.post-heading .meta .title a {
   color: black;
 }
 
-.post .post-heading .meta .time {
+.post-heading .meta .time {
   margin-top: 8px;
   color: rgb(135, 45, 45);
 }
@@ -95,15 +90,18 @@ export default {
   width: 100%;
   min-height: 1460px;
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  gap: 50px;
 }
-
 
 @media (max-width: 600px) {
   .container {
     width: 85%;
     display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .box {
@@ -112,5 +110,9 @@ export default {
   }
 }
 
-
+.carta {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
 </style>
