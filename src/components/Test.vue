@@ -1,5 +1,12 @@
 <script>
 import LetterService from "../services/LetterService";
+import { reactive} from "vue";
+
+const newLetter = reactive({
+  name: "",
+  email: "",
+    });
+    
 export default {
   name: "Letters",
   data() {
@@ -8,6 +15,8 @@ export default {
       
     };
   },
+
+  
   methods: {
     getLetters() {
       LetterService.getLetters().then((response) => {
@@ -19,7 +28,18 @@ export default {
     this.getLetters();
     
   },
+
+//   addLetter(data) {
+//   const url = "http://localhost:8080/api/letters";
+//   const response = axios.post(url, newLetter);
+//   const json = response.data;
   
+//   console.log(json);
+//     getData();
+// }
+
+
+
 };
 </script>
 
@@ -51,9 +71,15 @@ export default {
               <p class="card-text">{{ letter.email }}</p>
             </strong>
             <p>{{ letter.name }}</p>
-            
+          
           </div>
-         
+          <!-- <ul v-for="(letter, index) in letters" :key="index">
+           
+    
+      <input v-model="newLetter.name" type="text" name="name" id="name" class="m-1 w-75 form-control"/>
+      <input v-model="newLetter.email" type="text" name="email" id="email" class="m-1 w-75 form-control"/>
+      <button class="lool" @click="addLetter(objetoNuevo)">Añadir</button> 
+    </ul> -->
         </div>
       </div>
     </div>
