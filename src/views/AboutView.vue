@@ -6,7 +6,10 @@
       <div class="promo">
         <h1>¿Quieres conocerme?</h1>
         <p>Echale un vistazo a mi portfolio</p>
-        <button type="button">Accede </button>
+
+        <a href="https://lauracastelao.github.io/Portfolio/">
+          <button type="button">Accede</button>
+        </a>
       </div>
       <video muted autoplay loop>
         <source src="../video/production ID_5183314.mp4" type="video/mp4" />
@@ -17,8 +20,6 @@
 </template>
 
 <style lang="scss" scoped>
-
-
 #hero {
   min-height: 100vh;
   position: relative;
@@ -56,34 +57,33 @@ video {
   z-index: 2;
 }
 
-button{
-  border-radius:30px;
+button {
+  border-radius: 30px;
   padding: 10px 0;
-  width:160px;
+  width: 160px;
   background-color: pink;
   font-size: 1.8rem;
   color: #3f3f3f;
   font-weight: 800;
-  transition:150ms;
-  margin-top:40px;
-
+  transition: 150ms;
+  margin-top: 40px;
 }
 
-button:focus{
-outline: none;
+button:focus {
+  outline: none;
 }
-button:hover{
-  transform: translate(0,-5px);
+button:hover {
+  transform: translate(0, -5px);
 }
 
-.body{
-  margin:0;
+.body {
+  margin: 0;
   padding: 0;
-  line-height:1.6;
-  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
 }
 
-.promo{
+.promo {
   padding-top: 350px;
   display: flex;
   flex-direction: column;
@@ -91,22 +91,19 @@ button:hover{
   align-items: center;
   width: 60%;
   margin: auto;
-
 }
 
-.promo p{
+.promo p {
   font-size: 2.5 rem;
-  text-align:center;
-  color:white;
+  text-align: center;
+  color: white;
   font-weight: 900;
-
 }
 
-
-.promo h1{
+.promo h1 {
   font-size: 3.5rem;
-  text-align:center;
-  color:#f3f3f3;
+  text-align: center;
+  color: #f3f3f3;
   font-weight: 700;
 }
 </style>
