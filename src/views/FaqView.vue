@@ -1,11 +1,11 @@
 
 <template>
     <div>
-     <CrudApp/>
+     <Test/>
     </div>
 </template>
 <script setup>
-import CrudApp from '../components/CrudApp.vue';
+import Test from '../components/Test.vue';
 </script>
 
   
