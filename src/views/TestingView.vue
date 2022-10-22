@@ -1,9 +1,10 @@
 <template>
-<Crud/>
+<CrudApp/>
 </template>
 
 <script setup>
-import Crud from '../components/Crud.vue';
+import CrudApp from '../components/CrudApp.vue';
+
 
 
 </script>

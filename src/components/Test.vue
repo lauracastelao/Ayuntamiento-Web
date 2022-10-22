@@ -5,7 +5,7 @@ export default {
   data() {
     return {
       letters: [],
-      questions: [],
+      
     };
   },
   methods: {
@@ -17,7 +17,9 @@ export default {
   },
   created() {
     this.getLetters();
+    
   },
+  
 };
 </script>
 
@@ -49,7 +51,9 @@ export default {
               <p class="card-text">{{ letter.email }}</p>
             </strong>
             <p>{{ letter.name }}</p>
+            
           </div>
+         
         </div>
       </div>
     </div>

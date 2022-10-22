@@ -1,9 +1,15 @@
-<!-- <template>
+ <template>
   <div style="margin: 0 auto; width: 80%">
+    <p>
+      dde
+    </p>
+    <p>
+      dde
+    </p>
     <Panel header="CRUD 4SD">
       <Menubar :model="items" />
       <br />
-      <DataTable :value="preguntas" :paginator="true" :rows="10">
+      <DataTable :value="letters" :paginator="true" :rows="10">
         <Column field="nombre" header="Nombre"></Column>
         <Column field="apellido" header="Apellido"></Column>
         <Column field="direccion" header="Dirección"></Column>
@@ -55,7 +61,7 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 import LetterService from "../service/LetterService";
 import axios from "axios";
 const API = "https://localhost:8080/api/letters";
@@ -164,8 +170,8 @@ export default {
 };
 </script>
 
-<style></style> -->
-<script setup>
+<style></style> --> 
+<!-- <script setup>
 import axios from "axios";
 import { ref, reactive, onBeforeMount } from "vue";
 
@@ -195,7 +201,7 @@ async function getData() {
 }
 
 onBeforeMount(async () => {});
-console.log("hola a a a a");
+console.log("Funciona");
 await getData();
 </script>
 
@@ -217,4 +223,9 @@ await getData();
 </template>
 
 
-<style scoped></style>
+<style scoped></style> -->
+
+
+<script setup>
+
+</script> -->
