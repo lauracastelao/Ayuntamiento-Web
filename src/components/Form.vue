@@ -1,6 +1,4 @@
-<script setup>
-  
-</script>
+<script setup></script>
 
 <template>
   <h1>Contacto</h1>
@@ -77,19 +75,21 @@
           <label class="form-check-label" for="gridCheck"> Recordar </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-secondary"><RouterLink to="/"><a>Contactar</a></RouterLink></button>
-  </div>
+      <button type="submit" class="btn btn-secondary">
+        <RouterLink to="/"><a>Contactar</a></RouterLink>
+      </button>
+    </div>
   </div>
 </template>
 <style lang="css" scoped>
 .container {
- width: 60vh;
-  margin-top:1rem ;
+  width: 60vh;
+  margin-top: 1rem;
   background: rgb(240, 237, 207);
   padding: 1rem;
   margin: auto;
 }
-a{
+a {
   color: #fff;
 }
 </style>

@@ -18,7 +18,7 @@ const app = createApp(App);
 app.use(createPinia());
 app.use(router);
 app.use(PrimeVue);
-app.use(Vuelidate);
+
 app.mount("#app");
 app.component('DataTable', DataTable);
 app.component('Column', Column);
@@ -28,3 +28,4 @@ app.component('Menubar', Menubar);
 app.component('Dialog', Dialog);
 app.component('InputText', InputText);
 app.component('Button', Button);
+Vue.use(Vuelidate);

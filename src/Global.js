@@ -1,4 +1,4 @@
 export var Global = {
-    url: 'http://localhost:8080/api/letters',
+    url: 'http://localhost:8080/api/contacto',
     token: '12345'
 }
