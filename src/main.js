@@ -13,12 +13,13 @@ import Dialog from "primevue/dialog";
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
 import Vuelidate from 'vuelidate';
+import { VueFlashMessage } from "vue-flash-message";
 const app = createApp(App);
-
+app.use(VueFlashMessage);
 app.use(createPinia());
 app.use(router);
 app.use(PrimeVue);
-
+app.use(Vuelidate);
 app.mount("#app");
 app.component('DataTable', DataTable);
 app.component('Column', Column);
@@ -28,4 +29,4 @@ app.component('Menubar', Menubar);
 app.component('Dialog', Dialog);
 app.component('InputText', InputText);
 app.component('Button', Button);
-Vue.use(Vuelidate);
+Vue.use(VueFlashMessage);

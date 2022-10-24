@@ -76,6 +76,12 @@ const router = createRouter({
       name: 'data',
       component: () => import("../views/DataView.vue"),
     },
+    {
+      path: '/contacto',
+      name: 'contacto',
+      component: () => import("../views/SimpleView.vue"),
+    },
+  
   
   ],
 
