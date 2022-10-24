@@ -30,11 +30,71 @@
             </div>
         </div>
     </div>
-    
+
+    <h1>Prueba</h1>
+    <div v-for="l in letter.data" :key="l.id">
+    {{ l.name }}
+    </div>
+    <form @submit="sendForm">
+    <label for="">Nombre</label>
+    <input type="text" v-model="letter.name"/> 
+    <br> 
+    <label for="">Categoria</label>
+    <select v-model="letter.email">
+     <p> {{ letter.name }} </p>
+  
+    </select>
+    <input type="submit" value="Enviar">
+    </form>
+
+    <p>ede</p>
+    <p> {{ letter.name }}</p>
+    <p>ede</p>
+    <p>ede</p>
+    <p>ede</p>
+    <p>ede</p>
+
+
     </template>
     
-    <script setup>
-    
+    <script>
+    export default {
+        data(){
+            return{
+                
+                letter:{
+                    name:"",
+                    email:""
+                }
+                
+            }
+        },
+  
+    methods: {
+        sendForm (e){
+           e.preventDefault();
+          
+           const formData =new formData()
+           formData.append('name', this.letter.name)
+           formData.append('email', this.letter.email)
+
+           this.insert(formData)
+        },
+
+        insert(formData){
+            fetch("http://localhost:8080/api/letters", {
+            method: 'POST',
+            body: formData
+            }).then((res) => res.json())
+            .then((res) => console.log(res))
+        }
+    },
+    mounted (){
+        fetch("http://localhost:8080/api/letters")
+        .then((res) => res.json())
+        .then((res) => (this.letters =res));
+    }
+}
     </script>
     
     <style lang="scss" scoped>

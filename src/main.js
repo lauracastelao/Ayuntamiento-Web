@@ -12,12 +12,13 @@ import Menubar from "primevue/menubar";
 import Dialog from "primevue/dialog";
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
-
+import Vuelidate from 'vuelidate';
 const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
 app.use(PrimeVue);
+app.use(Vuelidate);
 app.mount("#app");
 app.component('DataTable', DataTable);
 app.component('Column', Column);

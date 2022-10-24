@@ -12,6 +12,18 @@ class LetterService {
     addLetters(){
         return axios.post(LETTER_API_BASE_URL)
     }
+    
+    storeLetters() {
+        return axios.post(LETTER_API_BASE_URL)
+      }
+    
+    updateLetters(){
+        return axios.post(LETTER_API_BASE_URL)
+    }
 }
 export default new LetterService();
 //  Aqui le pido a axios que haga la llamada a mi api de java 
+
+
+
+
