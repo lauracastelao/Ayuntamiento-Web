@@ -6,7 +6,7 @@
         <div class="card" style="border-radius: 1rem;">
           <div class="row g-0">
             <div class="col-md-6 col-lg-5 d-none d-md-block">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+              <img src="https://images.pexels.com/photos/5231306/pexels-photo-5231306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
             </div>
             <div class="col-md-6 col-lg-7 d-flex align-items-center">

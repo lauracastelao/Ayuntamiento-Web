@@ -10,11 +10,11 @@
       </footer>
     </div>
   </div>
-<Card/>
+
 
 </template>
 <script setup>
-import Card from '../components/Card.vue';
+
 </script>
 <style lang="css" scoped>
 img {

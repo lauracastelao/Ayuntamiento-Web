@@ -72,9 +72,9 @@ const router = createRouter({
       component: () => import("../views/TestingView.vue"),
     },
     {
-      path: '/data',
-      name: 'data',
-      component: () => import("../views/DataView.vue"),
+      path: '/galery',
+      name: 'galery',
+      component: () => import("../views/GaleryView.vue"),
     },
     {
       path: '/contacto',

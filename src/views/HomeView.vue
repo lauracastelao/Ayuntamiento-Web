@@ -2,16 +2,18 @@
 import Home from "../components/Home.vue";
 
 import Axios from "../components/Axios.vue";
-
+import Quote from "../components/Quote.vue";
+import Card from "../components/Card.vue";
 </script>
 
 <template>
-<div id="Home">
-  <Home/>
-  <Axios/>
+  <div id="Home">
+    <Home />
 
-
-</div>
+    <Quote />
+    <Card/>
+    <Axios />
+  </div>
 </template>
 <style scoped lang="css">
 * {

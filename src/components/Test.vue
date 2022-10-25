@@ -1,22 +1,25 @@
 <script>
 import LetterService from "../services/LetterService";
-import { reactive} from "vue";
+import { reactive } from "vue";
+import axios from "axios";
 
 const newLetter = reactive({
   name: "",
   email: "",
-    });
-    
+});
+
 export default {
   name: "Letters",
   data() {
     return {
       letters: [],
-      
+      form: {
+        name: "",
+        email: "",
+      },
     };
   },
 
-  
   methods: {
     getLetters() {
       LetterService.getLetters().then((response) => {
@@ -26,70 +29,61 @@ export default {
   },
   created() {
     this.getLetters();
-    
+    axios.delete("https://localhost:8080/api/letters");
   },
-  
-  deleteLetters() {
-      LetterService.delete(this.letter)
-        .then(response => {
-          console.log(response.data);
-          this.refreshList();
-        })
-        .catch(e => {
-          console.log(e);
-        });
-},
 
-
-
+  deleteLetter() {
+    axios
+      .delete("http://localhost:8080/api/letters")
+      .then((res) => {})
+      .catch((error) => {})
+      .finally(() => {});
+  },
 };
 </script>
 
 <template>
   <h1>Preguntas frecuentes</h1>
-
-  <div class="container d-flex justify-content-center mt-100 mb-100">
-    <div class="box">
-      <div class="post-heading">
-        <div class="float-left image">
-          <img
-            src="https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg"
-            class="img-circle avatar"
-            alt="user profile image"
-          />
-        </div>
-        <div class="float-left meta">
-          <div class="title h5">
-            <a href="#"><b>Ayuntamiento</b></a>
-            panel de control
+  <form v-on:submit.prevent="deleteLetter">
+    <div class="container d-flex justify-content-center mt-100 mb-100">
+      <div class="box">
+        <div class="post-heading">
+          <div class="float-left image">
+            <img
+              src="https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg"
+              class="img-circle avatar"
+              alt="user profile image"
+            />
           </div>
-          <h6 class="text-muted time">Hace 30 días</h6>
-        </div>
-      </div>
-      <div class="card w-100">
-        <div class="carta">
-          <div v-for="letter in letters" v-bind:key="letter.id">
-        
-            <strong>
-              <p class="card-text">{{ letter.email }}</p> 
-            </strong>
-            <p>{{ letter.name }}</p> 
-            <button @click="editUser(user)">Edit</button>
-            <button @click="deleteLetter(letter.id)">Delete</button>
+          <div class="float-left meta">
+            <div class="title h5">
+              <a href="#"><b>Ayuntamiento</b></a>
+              panel de control
+            </div>
+            <h6 class="text-muted time">Hace 30 días</h6>
           </div>
+        </div>
 
+        <div class="card w-100">
+          <div class="carta">
+            <div v-for="letter in letters" v-bind:key="letter.id">
+              <strong>
+                <p class="card-text">{{ letter.email }}</p>
+              </strong>
+              <p>{{ letter.name }}</p>
+              <button class="btn btn-dark" @click="editUser(user)">Editar</button>
 
-          <!-- <ul v-for="(letter, index) in letters" :key="index">
-           
-    
-      <input v-model="newLetter.name" type="text" name="name" id="name" class="m-1 w-75 form-control"/>
-      <input v-model="newLetter.email" type="text" name="email" id="email" class="m-1 w-75 form-control"/>
-      <button class="lool" @click="addLetter(objetoNuevo)">Añadir</button> 
-    </ul> -->
+              <b-button class="btn btn-danger ml-2" @click="deleteLetter"
+                >Eliminar</b-button
+              >
+            </div>
+
+     
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </template>
 
 <style lang="css" scoped>
@@ -151,4 +145,7 @@ export default {
   flex-direction: column;
   gap: 1vh;
 }
+
+
+
 </style>

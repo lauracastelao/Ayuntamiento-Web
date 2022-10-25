@@ -10,7 +10,7 @@ import Copyright from "./components/Copyright.vue";
 
 
   <RouterView />
-  <!-- <Copyright/> -->
+  <Copyright/> 
 
 </template>
 

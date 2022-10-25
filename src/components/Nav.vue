@@ -47,6 +47,9 @@ import {RouterLink} from 'vue-router';
           <li class="nav-item">
            <RouterLink to="/register">REGISTRO</RouterLink>
           </li>
+          <li class="nav-item">
+           <RouterLink to="/galery">PERSONAS</RouterLink>
+          </li>
         </ul>
         <form class="d-flex" role="search">
           <input
