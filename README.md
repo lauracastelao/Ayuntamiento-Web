@@ -1,41 +1,67 @@
-# buzón
 
-This template should help get you started developing with Vue 3 in Vite.
+# Buzonin 📬
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+El acceso a la tecnología va evolucionando cada más rápido,eso nos beneficia pero a su vez, otras muchas personas, no tienen la misma igualdad;en el caso de los mayores, la causa principal de esta brecha es el desconocimiento del uso de estas tecnologías.
 
-## Customize configuration
+ Así surge buzonín, una aplicación con la que realizar los trámites básicos de consulta ciudadana sin la necesidad de tener conocimientos básicos. A golpe de click y con el contenido justo,llegando a todas las personas sin barrera.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
+## Demo
+
+![App Screenshot](https://github.com/lauracastelao/image/blob/main/Portada.jpg?raw=true)
+
+
+
+
+
+
+## Framework
+
+VUE.JS
+
+API-> SprinBoot/Java
+
+
+
+## Instalación 
+
+Clona el proyecto
+```bash
+  git clone 
 ```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
+
+Instalar dependencias
+
+```bash
+  npm install
 ```
 
-### Compile and Minify for Production
+Arrancar el servidor
 
-```sh
-npm run build
+```bash
+  npm run dev
+
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
 
-```sh
-npm run test:unit
-```
+## 🔗 Herramientas 
 
-### Lint with [ESLint](https://eslint.org/)
+[Canva]("https://www.canva.com/")
 
-```sh
-npm run lint
-```
+[Notion]("https://www.notion.so")
+
+
+## Idea y desarrollo ⌨️
+
+- [@lauracastelao](https://github.com/lauracastelao)
+
+
+##  Caracteristicas 👾
+
+- Chat box.
+
+
