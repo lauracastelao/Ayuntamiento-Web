@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <!-- code here -->
     <div class="form-group">
       <div class="card">
         <div class="card-image">
@@ -9,11 +8,9 @@
             <small>Si tu pregunta no se encuentra arriba en FAQ,creala</small>
           </h2>
         </div>
-        <form v-on:submit.prevent="submitForm">
-          <form class="card-form">
-            
-
-            <div class="input">
+        <form class="card-form">
+          <form v-on:submit.prevent="submitForm">
+            <div class="input" for="email">
               <input
                 type="email"
                 id="email"
@@ -23,7 +20,7 @@
               />
               <label class="input-label">Email</label>
             </div>
-            <div class="input">
+            <div class="input" for="name">
               <input
                 type="text"
                 class="input-field"
@@ -53,7 +50,7 @@
 import axios from "axios";
 
 export default {
-  name: "Answer",
+  name: "ContactoComponent",
   data() {
     return {
       form: {

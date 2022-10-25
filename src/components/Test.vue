@@ -28,15 +28,17 @@ export default {
     this.getLetters();
     
   },
-
-//   addLetter(data) {
-//   const url = "http://localhost:8080/api/letters";
-//   const response = axios.post(url, newLetter);
-//   const json = response.data;
   
-//   console.log(json);
-//     getData();
-// }
+  deleteLetters() {
+      LetterService.delete(this.letter)
+        .then(response => {
+          console.log(response.data);
+          this.refreshList();
+        })
+        .catch(e => {
+          console.log(e);
+        });
+},
 
 
 
@@ -59,7 +61,7 @@ export default {
         <div class="float-left meta">
           <div class="title h5">
             <a href="#"><b>Ayuntamiento</b></a>
-            acaba de postear
+            panel de control
           </div>
           <h6 class="text-muted time">Hace 30 días</h6>
         </div>
@@ -67,12 +69,16 @@ export default {
       <div class="card w-100">
         <div class="carta">
           <div v-for="letter in letters" v-bind:key="letter.id">
+        
             <strong>
-              <p class="card-text">{{ letter.email }}</p>
+              <p class="card-text">{{ letter.email }}</p> 
             </strong>
-            <p>{{ letter.name }}</p>
-          
+            <p>{{ letter.name }}</p> 
+            <button @click="editUser(user)">Edit</button>
+            <button @click="deleteLetter(letter.id)">Delete</button>
           </div>
+
+
           <!-- <ul v-for="(letter, index) in letters" :key="index">
            
     

@@ -31,11 +31,12 @@
           v-model="form.email"
         />
         <div class="form-groupss">
-          <button class="action-button">Submit</button>
+          <button onClick="refreshPage()" class="action-button">Submit</button>
         </div>
       </div>
     </form>
   </div>
+  
 </template>
 
 <script>
@@ -67,6 +68,8 @@ export default {
     },
   },
 };
+
+
 </script>
 
 <style lang="scss" scoped>
