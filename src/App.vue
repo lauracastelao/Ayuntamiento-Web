@@ -6,14 +6,10 @@ import Copyright from "./components/Copyright.vue";
 </script>
 
 <template>
-<Nav/>
-
+  <Nav />
 
   <RouterView />
-  <Copyright/> 
-
+  <Copyright />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

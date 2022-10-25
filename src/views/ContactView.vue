@@ -1,17 +1,11 @@
 <script setup>
-
-   
 import Form from "../components/Form.vue";
+</script>
 
-    
-    </script>
-    
-    <template>
-      <div>
-       <Form/>
-      </div>
-    </template>
-    
-    <style>
-    
-    </style>
+<template>
+  <div>
+    <Form />
+  </div>
+</template>
+
+<style></style>

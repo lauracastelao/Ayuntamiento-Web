@@ -1,21 +1,14 @@
 
 <script setup>
 
-import {RouterLink} from 'vue-router';
+import { RouterLink } from 'vue-router';
 </script>
 <template>
-   <nav class="navbar navbar-expand-lg bg-secondary fixed-top d-flex" id="navbar">
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top d-flex" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Buzonín 📬</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,7 +20,7 @@ import {RouterLink} from 'vue-router';
             <RouterLink to="/letter">CARTA</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/claim">QUEJA/SUGERENCIA</RouterLink>
+            <RouterLink to="/claim">QUEJA/SUGERENCIA</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink to="/question">PREGUNTA</RouterLink>
@@ -39,38 +32,40 @@ import {RouterLink} from 'vue-router';
             <RouterLink to="/about">CONÓCEME</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/idea">IDEA</RouterLink>
+            <RouterLink to="/idea">IDEA</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/login">ACCESO</RouterLink>
+            <RouterLink to="/login">ACCESO</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/register">REGISTRO</RouterLink>
+            <RouterLink to="/register">REGISTRO</RouterLink>
           </li>
           <li class="nav-item">
-           <RouterLink to="/galery">PERSONAS</RouterLink>
+            <RouterLink to="/galery">PERSONAS</RouterLink>
           </li>
         </ul>
-        
+
       </div>
     </div>
-    
+
   </nav>
 </template>
 
 
 <style lang="css" scoped>
- .nav-item {
+.nav-item {
   display: flex;
   justify-content: space-evenly;
 }
+
 a {
   text-decoration: none;
   margin-right: 1rem;
-  color:white;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
 }
+
 a:hover {
   color: rgb(193, 178, 181);
 }
@@ -80,9 +75,7 @@ nav {
   height: 6.5vh;
 }
 
-.nav-item{
-  color:white;
+.nav-item {
+  color: white;
 }
-
-
 </style>

@@ -7,36 +7,21 @@
         <div class="card-image">
           <h2 class="card-heading">
             Pregúntanos
-            <small
-              >Pregúntanos Si tu pregunta no se encuentra arriba en
-              FAQ,creala</small
-            >
+            <small>Pregúntanos Si tu pregunta no se encuentra arriba en
+              FAQ,creala</small>
           </h2>
         </div>
         <label for="name">Name</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Your name"
-          v-model="form.name"
-        />
+        <input type="text" class="form-control" id="name" placeholder="Your name" v-model="form.name" />
 
         <label for="email">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="email"
-          placeholder="name@example.com"
-          v-model="form.email"
-        />
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" v-model="form.email" />
         <div class="form-groupss">
           <button onClick="refreshPage()" class="action-button">Submit</button>
         </div>
       </div>
     </form>
   </div>
-  
 </template>
 
 <script>
@@ -68,14 +53,13 @@ export default {
     },
   },
 };
-
-
 </script>
 
 <style lang="scss" scoped>
 .container {
   margin-top: 15vh;
 }
+
 .form-group {
   margin: 2rem auto;
   display: flex;
@@ -99,6 +83,7 @@ export default {
   background-position: 0 5%;
   position: relative;
 }
+
 .card-heading {
   position: absolute;
   left: 10%;
@@ -108,6 +93,7 @@ export default {
   font-weight: 700;
   color: #735400;
   line-height: 1.222;
+
   small {
     display: block;
     font-size: 0.75em;
@@ -125,7 +111,8 @@ export default {
   flex-direction: column-reverse;
   position: relative;
   padding-top: 1.5rem;
-  & + .input {
+
+  &+.input {
     margin-top: 1.5rem;
   }
 }
@@ -150,6 +137,7 @@ input #email.form-control {
   border-radius: 6px;
   color: #fff;
   border: 0;
+
   &:focus {
     outline: 0;
   }

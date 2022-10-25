@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -27,65 +26,61 @@ const router = createRouter({
       component: () => import("../views/ContactView.vue"),
     },
     {
-      path: '/letter',
-      name: 'letter',
+      path: "/letter",
+      name: "letter",
       component: () => import("../views/LetterView.vue"),
     },
     {
-      path: '/about',
-      name: 'about',
+      path: "/about",
+      name: "about",
       component: () => import("../views/AboutView.vue"),
     },
     {
-      path: '/faq',
-      name: 'faq',
+      path: "/faq",
+      name: "faq",
       component: () => import("../views/FaqView.vue"),
     },
     {
-      path: '/question',
-      name: 'question',
+      path: "/question",
+      name: "question",
       component: () => import("../views/QuestionView.vue"),
     },
     {
-      path: '/claim',
-      name: 'claim',
+      path: "/claim",
+      name: "claim",
       component: () => import("../views/SuggestView.vue"),
     },
     {
-      path: '/idea',
-      name: 'idea',
+      path: "/idea",
+      name: "idea",
       component: () => import("../views/SocialView.vue"),
     },
     {
-      path: '/login',
-      name: 'login',
+      path: "/login",
+      name: "login",
       component: () => import("../views/LoginView.vue"),
     },
     {
-      path: '/register',
-      name: 'register',
+      path: "/register",
+      name: "register",
       component: () => import("../views/RegisterView.vue"),
     },
     {
-      path: '/test',
-      name: 'test',
+      path: "/test",
+      name: "test",
       component: () => import("../views/TestingView.vue"),
     },
     {
-      path: '/galery',
-      name: 'galery',
+      path: "/galery",
+      name: "galery",
       component: () => import("../views/GaleryView.vue"),
     },
     {
-      path: '/contacto',
-      name: 'contacto',
+      path: "/contacto",
+      name: "contacto",
       component: () => import("../views/SimpleView.vue"),
     },
-  
-  
   ],
-
- 
 });
 
 export default router;

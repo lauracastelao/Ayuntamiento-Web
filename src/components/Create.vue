@@ -11,12 +11,12 @@
 <script>
 
 export default {
-  data(){
-return{
-    form:{
-        title:''
+  data() {
+    return {
+      form: {
+        title: ''
+      }
     }
-}
 
 
   }

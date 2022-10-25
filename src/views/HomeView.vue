@@ -11,7 +11,7 @@ import Card from "../components/Card.vue";
     <Home />
 
     <Quote />
-    <Card/>
+    <Card />
     <Axios />
   </div>
 </template>

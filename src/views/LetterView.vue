@@ -1,11 +1,6 @@
-
 <script setup>
-  import Letter from "../components/Letter.vue";
+import Letter from "../components/Letter.vue";
 </script>
 <template>
-   
-
-
-<Letter/>
-   
+  <Letter />
 </template>

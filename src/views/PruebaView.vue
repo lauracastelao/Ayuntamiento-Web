@@ -1,6 +1,6 @@
 <script setup>
-import Prueba from '../components/Prueba.vue';
+import Prueba from "../components/Prueba.vue";
 </script>
 <template>
-    <Prueba/>
+  <Prueba />
 </template>

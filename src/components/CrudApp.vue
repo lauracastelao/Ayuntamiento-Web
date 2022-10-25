@@ -1,4 +1,4 @@
- <template>
+<template>
   <div style="margin: 0 auto; width: 80%">
     <p>
       dde
@@ -18,44 +18,24 @@
     </Panel>
     <Dialog header="Crear pregunta" :visible.sync="displayModal" :modal="true">
       <span class="p-float-label">
-        <InputText
-          id="nombre"
-          type="text"
-          v-model="letter.id"
-          style="width: 100%"
-        />
+        <InputText id="nombre" type="text" v-model="letter.id" style="width: 100%" />
         <label for="nombre">Pregunta</label>
       </span>
       <br />
       <span class="p-float-label">
-        <InputText
-          id="apellido"
-          type="text"
-          v-model="letter.email"
-          style="width: 100%"
-        />
+        <InputText id="apellido" type="text" v-model="letter.email" style="width: 100%" />
         <label for="apellido">Respuesta</label>
       </span>
       <br />
       <span class="p-float-label">
-        <InputText
-          id="direccion"
-          type="text"
-          v-model="letter.name"
-          style="width: 100%"
-        />
+        <InputText id="direccion" type="text" v-model="letter.name" style="width: 100%" />
         <label for="direccion">Comentario </label>
       </span>
       <br />
 
       <template #footer>
         <Button label="Guardar" icon="pi pi-check" @click="save" />
-        <Button
-          label="Cancelar"
-          icon="pi pi-times"
-          @click="closeModal"
-          class="p-button-secondary"
-        />
+        <Button label="Cancelar" icon="pi pi-times" @click="closeModal" class="p-button-secondary" />
       </template>
     </Dialog>
   </div>

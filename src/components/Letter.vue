@@ -1,44 +1,45 @@
 <template>
   <div id="container">
-  <h1> <iframe src="https://embed.lottiefiles.com/animation/95247"></iframe> </h1>
-  <div class="">
-  </div>
-  <div class="icon_wrapper">
-   
-  </div>
-  <form action="#" method="post" id="contact_form">
-    <div class="name">
-      <label for="name"></label>
-      <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+    <h1> <iframe src="https://embed.lottiefiles.com/animation/95247"></iframe> </h1>
+    <div class="">
     </div>
-    <div class="email">
-      <label for="email"></label>
-      <input type="email" placeholder="EMAIL" name="email" id="email_input" required>
-    </div>
-    <div class="telephone">
-      <label for="name"></label>
-      <input type="text" placeholder="TELEFONO" name="telephone" id="telephone_input" required>
-    </div>
-    <div class="subject">
-      <label for="subject"></label>
-      <select placeholder="Subject line" name="subject" id="subject_input" required>
-        <option disabled hidden selected>asunto</option>
-        <option>Soy ciudadano</option>
-        <option>Soy empresa</option>
-        <option>Otro</option>
-      </select>
-    </div>
-    <div class="message">
-      <label for="message"></label>
-      <textarea name="message" placeholder="Escribe tu carta" id="message_input" cols="30" rows="5" required></textarea>
-    </div>
-    <div class="submit">
-      <input type="submit" value="ENVIAR" id="form_button" />
-    </div>
-  </form><!-- // End form -->
-</div><!-- // End #container -->
+    <div class="icon_wrapper">
 
- 
+    </div>
+    <form action="#" method="post" id="contact_form">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+      </div>
+      <div class="email">
+        <label for="email"></label>
+        <input type="email" placeholder="EMAIL" name="email" id="email_input" required>
+      </div>
+      <div class="telephone">
+        <label for="name"></label>
+        <input type="text" placeholder="TELEFONO" name="telephone" id="telephone_input" required>
+      </div>
+      <div class="subject">
+        <label for="subject"></label>
+        <select placeholder="Subject line" name="subject" id="subject_input" required>
+          <option disabled hidden selected>asunto</option>
+          <option>Soy ciudadano</option>
+          <option>Soy empresa</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="message">
+        <label for="message"></label>
+        <textarea name="message" placeholder="Escribe tu carta" id="message_input" cols="30" rows="5"
+          required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="ENVIAR" id="form_button" />
+      </div>
+    </form>
+  </div>
+
+
 
 </template>
 
@@ -59,11 +60,15 @@ button {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   color: #5A5A5A;
   font: inherit;
   margin: 0;
@@ -119,46 +124,51 @@ h1 {
 }
 
 .email {
-	float: right;
-	width: 45%;
+  float: right;
+  width: 45%;
 }
 
-input[type='text'], [type='email'], select, textarea {
-	background: none;
+input[type='text'],
+[type='email'],
+select,
+textarea {
+  background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
-	font-size: 1.000em;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
   text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
-	outline: none;
-	padding: 0 0 0.875em 0;
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
 }
 
 .message {
-	float: none;
+  float: none;
 }
 
 .name {
-	float: left;
-	width: 45%;
+  float: left;
+  width: 45%;
 }
 
 select {
@@ -181,28 +191,28 @@ select::-ms-expand {
 }
 
 textarea {
-	line-height: 150%;
-	height: 150px;
-	resize: none;
+  line-height: 150%;
+  height: 150px;
+  resize: none;
   width: 100%;
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
 
-:-moz-placeholder { 
-	color: #474544;
-	opacity: 1;
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #474544;
-	opacity: 1;
+  color: #474544;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
 
 #form_button {
@@ -218,10 +228,10 @@ textarea {
   padding: 20px 35px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #form_button:hover {
@@ -240,11 +250,11 @@ textarea {
   h1 {
     font-size: 26px;
   }
-  
+
   .underline {
     width: 68px;
   }
-  
+
   #form_button {
     padding: 15px 25px;
   }
@@ -254,17 +264,20 @@ textarea {
   h1 {
     font-size: 18px;
   }
-  
+
   .icon {
     height: 35px;
     width: 35px;
   }
-  
+
   .underline {
     width: 53px;
   }
-  
-  input[type='text'], [type='email'], select, textarea {
+
+  input[type='text'],
+  [type='email'],
+  select,
+  textarea {
     font-size: 0.875em;
   }
 }

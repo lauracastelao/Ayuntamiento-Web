@@ -1,19 +1,12 @@
 <script setup>
-    defineProps({
-      msg: {
-        type: String,
-        required: true,
-      },
-    });
-    </script>
+defineProps({
+  msg: {
+    type: String,
+    required: true,
+  },
+});
+</script>
 
+<template></template>
 
-<template>
-   
-  
-
-</template>
-
-<style scoped>
-
-</style>
+<style scoped></style>

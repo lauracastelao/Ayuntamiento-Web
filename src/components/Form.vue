@@ -8,40 +8,20 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail4"
-            placeholder="Email"
-          />
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Contraseña</label>
-          <input
-            type="password"
-            class="form-control"
-            id="inputPassword4"
-            placeholder="Password"
-          />
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Dirección</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder="1234 Main St"
-        />
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
       </div>
       <div class="form-group">
         <label for="inputAddress2">Dirección 2</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress2"
-          placeholder="Apartamento, estudio,piso"
-        />
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estudio,piso" />
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -89,6 +69,7 @@
   padding: 1rem;
   margin: auto;
 }
+
 a {
   color: #fff;
 }

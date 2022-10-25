@@ -1,13 +1,8 @@
 <script setup>
-import Registro from '../components/Registro.vue';
-
-
+import Registro from "../components/Registro.vue";
 </script>
 <template>
-<Registro/>
-
+  <Registro />
 </template>
 
-<style scoped lang="css">
-
-</style>
+<style scoped lang="css"></style>

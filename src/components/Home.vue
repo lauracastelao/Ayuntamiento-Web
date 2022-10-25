@@ -1,10 +1,7 @@
 <template>
   <div id="content">
     <div class="post">
-      <img
-        src="https://www.geledes.org.br/wp-content/uploads/2020/05/maos-mulheres.png"
-        alt=""
-      />
+      <img src="https://www.geledes.org.br/wp-content/uploads/2020/05/maos-mulheres.png" alt="" />
       <footer>
         <h2>Cuando digan que no puedes hacerlo. Demuestra que están equivocados.</h2>
       </footer>

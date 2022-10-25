@@ -1,20 +1,20 @@
 <template>
-     <div class="presentacion">
-                <p class="bienvenida">Bienvenidxs</p>
-                <h2>La web que te quiere <span>escuchar </span> más simple,más conectados.</h2>
-                
-     </div>
+  <div class="presentacion">
+    <p class="bienvenida">Bienvenidxs</p>
+    <h2>La web que te quiere <span>escuchar </span> más simple,más conectados.</h2>
+
+  </div>
 </template>
 <style scoped>
-   
 .presentacion .bienvenida {
   font-size: 16px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-top: 6vh;
-  height:1vw;
+  height: 1vw;
 }
+
 .contenido header .contenido-header nav ul a:hover {
   color: yellow;
 }
@@ -48,14 +48,14 @@
   color: rgb(235, 72, 72);
 }
 
- .presentacion .descripcion {
+.presentacion .descripcion {
   max-width: 700px;
   margin: 25px auto;
   font-size: 18px;
   text-align: center;
 }
 
- .presentacion a {
+.presentacion a {
   text-align: none;
   display: inline-block;
   margin: 25px;
@@ -69,6 +69,4 @@
 .presentacion a:hover {
   background-color: rgb(218, 142, 196);
 }
-
-
 </style>

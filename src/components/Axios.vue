@@ -8,10 +8,9 @@ export default {
   created() {
     axios.get("https://jsonplaceholder.typicode.com/todos/1").then((result) => {
       console.log(result.data);
-    })
-  }
+    });
+  },
 };
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

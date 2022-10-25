@@ -11,22 +11,21 @@
 
       <div class="row">
         <div class="col-lg-6 mx-auto">
-          <blockquote
-            class="blockquote blockquote-custom bg-white p-5 shadow rounded"
-          >
+          <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
             <div class="blockquote-custom-icon bg-info shadow-sm">
               <i class="fa fa-quote-left text-white"></i>
             </div>
             <p class="mb-0 mt-2 font-italic">
-              "Envia una carta,una pregunta, una queja o reclamación de forma simple,si necesitas hacer una consulta y te has perdido ¡No pasa nada! Haz click en el chat y te contesto en horario de 9:00 a 16:00
-             " 💌
+              "Envia una carta,una pregunta, una queja o reclamación de forma simple,si necesitas hacer una consulta y
+              te has perdido ¡No pasa nada! Haz click en el chat y te contesto en horario de 9:00 a 16:00
+              " 💌
             </p>
             <footer class="blockquote-footer pt-4 mt-4 border-top">
               Laura García Castelao
-              
+
             </footer>
           </blockquote>
-         
+
         </div>
       </div>
     </div>

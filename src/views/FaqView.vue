@@ -1,13 +1,10 @@
-
 <template>
-    <div>
-     <Test/>
-    </div>
+  <div>
+    <Test />
+  </div>
 </template>
 <script setup>
-import Test from '../components/Test.vue';
+import Test from "../components/Test.vue";
 </script>
 
-  
-  <style>
-  </style>
+<style></style>

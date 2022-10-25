@@ -35,9 +35,9 @@ export default {
   deleteLetter() {
     axios
       .delete("http://localhost:8080/api/letters")
-      .then((res) => {})
-      .catch((error) => {})
-      .finally(() => {});
+      .then((res) => { })
+      .catch((error) => { })
+      .finally(() => { });
   },
 };
 </script>
@@ -51,9 +51,7 @@ export default {
           <div class="float-left image">
             <img
               src="https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg"
-              class="img-circle avatar"
-              alt="user profile image"
-            />
+              class="img-circle avatar" alt="user profile image" />
           </div>
           <div class="float-left meta">
             <div class="title h5">
@@ -71,14 +69,12 @@ export default {
                 <p class="card-text">{{ letter.email }}</p>
               </strong>
               <p>{{ letter.name }}</p>
-              <button class="btn btn-dark" @click="editUser(user)">Editar</button>
-         
-              <b-button class="btn btn-danger" @click="deleteLetter"
-                >Eliminar</b-button
-              >
-            </div>
+              <button class="btn btn-dark" @click="editUser(user)">
+                Editar
+              </button>
 
-     
+              <b-button class="btn btn-danger" @click="deleteLetter">Eliminar</b-button>
+            </div>
           </div>
         </div>
       </div>
@@ -146,8 +142,7 @@ export default {
   gap: 3vh;
 }
 
-.btn-danger{
-margin-left: 15px;
+.btn-danger {
+  margin-left: 15px;
 }
-
 </style>
