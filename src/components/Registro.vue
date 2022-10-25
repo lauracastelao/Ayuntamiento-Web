@@ -61,27 +61,24 @@
                     <label class="form-label" for="form3Example9">Nº tarjeta ciudadana</label>
                   </div>
 
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example90" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example90">Pincode</label>
-                  </div>
+                  
 
                   <div class="form-outline mb-4">
                     <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example99">Course</label>
+                    <label class="form-label" for="form3Example99">Telefono</label>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input type="text" id="form3Example97" class="form-control form-control-lg" />
-                    <label class="form-label" for="form3Example97">Email ID</label>
+                    <label class="form-label" for="form3Example97">Email</label>
                   </div>
 
                   <div class="d-flex justify-content-end pt-3">
                     <button type="button" class="btn btn-light btn-lg">
-                      Reset all
+                      Resetear todo
                     </button>
                     <button type="button" class="btn btn-warning btn-lg ms-2">
-                      Submit form
+                      Registrar
                     </button>
                   </div>
                 </div>
