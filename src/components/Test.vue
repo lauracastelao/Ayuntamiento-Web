@@ -72,8 +72,8 @@ export default {
               </strong>
               <p>{{ letter.name }}</p>
               <button class="btn btn-dark" @click="editUser(user)">Editar</button>
-
-              <b-button class="btn btn-danger ml-2" @click="deleteLetter"
+         
+              <b-button class="btn btn-danger" @click="deleteLetter"
                 >Eliminar</b-button
               >
             </div>
@@ -123,7 +123,7 @@ export default {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  gap: 50px;
+  gap: 60px;
 }
 
 @media (max-width: 600px) {
@@ -143,9 +143,11 @@ export default {
 .carta {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 3vh;
 }
 
-
+.btn-danger{
+margin-left: 15px;
+}
 
 </style>

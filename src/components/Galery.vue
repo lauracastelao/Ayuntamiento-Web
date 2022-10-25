@@ -100,7 +100,7 @@
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 h1 {
 	font-family: monospace;

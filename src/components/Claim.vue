@@ -31,29 +31,7 @@
         </div>
     </div>
 
-    <h1>Prueba</h1>
-    <div v-for="l in letter.data" :key="l.id">
-    {{ l.name }}
-    </div>
-    <form @submit="sendForm">
-    <label for="">Nombre</label>
-    <input type="text" v-model="letter.name"/> 
-    <br> 
-    <label for="">Categoria</label>
-    <select v-model="letter.email">
-     <p> {{ letter.name }} </p>
-  
-    </select>
-    <input type="submit" value="Enviar">
-    </form>
-
-    <p>ede</p>
-    <p> {{ letter.name }}</p>
-    <p>ede</p>
-    <p>ede</p>
-    <p>ede</p>
-    <p>ede</p>
-
+    
 
     </template>
     

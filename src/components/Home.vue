@@ -6,7 +6,7 @@
         alt=""
       />
       <footer>
-        <h2>Cuando dicen que no puedes hacerlo. Demuestra que están equivocados.</h2>
+        <h2>Cuando digan que no puedes hacerlo. Demuestra que están equivocados.</h2>
       </footer>
     </div>
   </div>

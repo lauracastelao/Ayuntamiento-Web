@@ -4,7 +4,7 @@
 import {RouterLink} from 'vue-router';
 </script>
 <template>
-   <nav class="navbar navbar-expand-lg bg-dark fixed-top d-flex" id="navbar">
+   <nav class="navbar navbar-expand-lg bg-secondary fixed-top d-flex" id="navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Buzonín 📬</a>
       <button
@@ -51,15 +51,7 @@ import {RouterLink} from 'vue-router';
            <RouterLink to="/galery">PERSONAS</RouterLink>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-danger" type="submit">Search</button>
-        </form>
+        
       </div>
     </div>
     
